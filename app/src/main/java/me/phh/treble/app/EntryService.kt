@@ -56,6 +56,7 @@ class EntryService: Service() {
             tryC { Ims.startup(this) }
             tryC { Custom.startup(this) }
             tryC { Hct.startup(this) }
+            tryC { Duo.startup(this) }
 
             tryC { Desktop.startup(this) }
             tryC { Lid.startup(this) }

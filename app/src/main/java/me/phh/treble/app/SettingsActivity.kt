@@ -65,6 +65,8 @@ class SettingsActivity : PreferenceActivity() {
             target.removeIf { it.fragment == AsusSettingsFragment::class.java.name }
         if (!QualcommSettings.enabled())
             target.removeIf { it.fragment == QualcommSettingsFragment::class.java.name }
+        if (!DuoSettings.enabled())
+            target.removeIf { it.fragment == DuoSettingsFragment::class.java.name }
         if (!VsmartSettings.enabled())
             target.removeIf { it.fragment == VsmartSettingsFragment::class.java.name }
         if (!MyDeviceSettings.enabled())
@@ -101,6 +103,7 @@ class SettingsActivity : PreferenceActivity() {
                 || NubiaSettingsFragment::class.java.name == fragmentName
                 || ImsSettingsFragment::class.java.name == fragmentName
                 || CustomSettingsFragment::class.java.name == fragmentName
+                || DuoSettingsFragment::class.java.name == fragmentName
     }
 
     companion object {
