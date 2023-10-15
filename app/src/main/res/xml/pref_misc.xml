@@ -121,7 +121,7 @@
   </PreferenceCategory>
 	<PreferenceCategory android:title="Bluetooth">
 		<ListPreference
-			android:defaultValue="-1"
+			android:defaultValue="0"
 			android:entries="@array/pref_misc_bluetooth"
 			android:entryValues="@array/pref_misc_bluetooth_values"
 			android:key="key_misc_bluetooth"
