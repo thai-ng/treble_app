@@ -25,6 +25,7 @@ object MiscSettings : Settings {
     val removeTelephony = "key_misc_removetelephony"
     val remotectl = "key_misc_remotectl"
     val disableAudioEffects = "key_misc_disable_audio_effects"
+    val disableFastAudio = "key_misc_disable_fast_audio"
     val cameraTimestampOverride = "key_misc_camera_timestamp"
     val sysbta = "key_misc_dynamic_sysbta"
     val noHwcomposer = "key_misc_no_hwcomposer"
@@ -40,6 +41,7 @@ object MiscSettings : Settings {
     val mtkTouchHintIsRotate = "key_misc_mediatek_touch_hint_rotate"
     val allowBinderThread = "key_misc_allow_binder_thread_on_incoming_calls"
     val LowGammaBrightness = "key_misc_low_gamma_brightness"
+    val linearBrightness = "key_misc_linear_brightness"
     val forceDisplay5g = "key_misc_force_display_5g"
 
     override fun enabled() = true
