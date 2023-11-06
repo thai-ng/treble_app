@@ -274,7 +274,7 @@ object Misc: EntryStartup {
                 val value = sp.getBoolean(key, false)
                 SystemProperties.set("persist.sys.phh.allow_binder_thread_on_incoming_calls", if(value) "1" else "0")
             }
-	    MiscSettings.LowGammaBrightness -> {
+            MiscSettings.lowGammaBrightness -> {
                 val value = sp.getBoolean(key, false)
                 SystemProperties.set("persist.sys.phh.low_gamma_brightness", if (value) "true" else "false")
             }
@@ -285,6 +285,10 @@ object Misc: EntryStartup {
             MiscSettings.linearBrightness -> {
                 val value = sp.getBoolean(key, false)
                 SystemProperties.set("persist.sys.phh.linear_brightness", if(value) "1" else "0")
+            }
+            MiscSettings.disableVoiceCallIn -> {
+                val value = sp.getBoolean(key, false)
+                SystemProperties.set("persist.sys.phh.disable_voice_call_in", if (value) "true" else "false")
             }
         }
     }

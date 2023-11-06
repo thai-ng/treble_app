@@ -40,9 +40,10 @@ object MiscSettings : Settings {
     val fodColor = "key_misc_fod_color"
     val mtkTouchHintIsRotate = "key_misc_mediatek_touch_hint_rotate"
     val allowBinderThread = "key_misc_allow_binder_thread_on_incoming_calls"
-    val LowGammaBrightness = "key_misc_low_gamma_brightness"
+    val lowGammaBrightness = "key_misc_low_gamma_brightness"
     val linearBrightness = "key_misc_linear_brightness"
     val forceDisplay5g = "key_misc_force_display_5g"
+    val disableVoiceCallIn = "key_misc_disable_voice_call_in"
 
     override fun enabled() = true
 }

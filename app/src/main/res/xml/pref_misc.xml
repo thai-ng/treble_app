@@ -151,6 +151,11 @@
 			android:title="Force display 5G network"
 			android:summary="Displays 5G as an option for the preferred network type\nRequires a reboot" />
 		<SwitchPreference
+			android:defaultValue="false"
+			android:key="key_misc_disable_voice_call_in"
+			android:title="Disable &quot;Voice Call In&quot; route"
+			android:summary="May fix echo or non-working audio on calls\nRequires a reboot" />
+		<SwitchPreference
 				android:defaultValue="false"
 				android:key="key_misc_restart_ril"
 				android:title="Automatically restart RIL" />
