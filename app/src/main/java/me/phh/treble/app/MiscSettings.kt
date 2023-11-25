@@ -39,6 +39,7 @@ object MiscSettings : Settings {
     val restartSystemUI = "key_misc_restart_systemui"
     val fodColor = "key_misc_fod_color"
     val mtkTouchHintIsRotate = "key_misc_mediatek_touch_hint_rotate"
+    val mtkGedKpi = "key_misc_mediatek_ged_kpi"
     val allowBinderThread = "key_misc_allow_binder_thread_on_incoming_calls"
     val lowGammaBrightness = "key_misc_low_gamma_brightness"
     val linearBrightness = "key_misc_linear_brightness"
